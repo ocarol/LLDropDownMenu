@@ -1,11 +1,11 @@
 //
-//  ErrorImgView.m
+//  LLErrorImgView.m
 //
 //  Created by ocarol on 16/1/4.
 //  Copyright © 2016年 ocarol. All rights reserved.
 //
 
-#import "ErrorImgView.h"
+#import "LLErrorImgView.h"
 #import "UIView+Frame.h"
 
 #define KScreenHeight   [UIScreen mainScreen].bounds.size.height
