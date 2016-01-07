@@ -29,7 +29,19 @@
  *  @return 下拉菜单对象
  */
 - (instancetype)initWithTitle:(NSString *)text image:(UIImage *)image data:(NSArray *)data menuDidSelected:(void(^)(NSString *selectedItemTitle))MenuDidSelected;
+
+/**
+ *  显示菜单
+ */
 - (void)showMenuContext;
+
+/**
+ *  隐藏菜单
+ */
 - (void)hidenMenuContext;
+
+/**
+ *  显示网络失败
+ */
 - (void)netWorkErrorInfo;
 @end
