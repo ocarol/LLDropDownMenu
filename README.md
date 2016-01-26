@@ -25,7 +25,7 @@ UIImage *img = [UIImage imageNamed:@"arrow-left-default"];
 NSArray *data = @[@"天安门",@"西直门",@"宣武门",@"八达岭",@"公主坟",@"复兴门",@"水立方",@"三棵树",@"王府井",@"西三旗",@"西二旗",@"回龙观",@"天通苑",@"圆明园",@"国家图书馆",@"中山公园",@"科技园"];
 
 [[LLDropDownMenu alloc] initWithTitle:@"北京" image:img data:data menuDidSelected:^(NSString *selectedItemTitle) {
-        //添加模糊请求代码
+        //添加点击菜单是执行的代码块
         weakSelf.title = selectedItemTitle;
         
     }];
