@@ -1,5 +1,5 @@
 //
-//  LLErrorImgView.m
+//  ErrorImgView.m
 //
 //  Created by ocarol on 16/1/4.
 //  Copyright © 2016年 ocarol. All rights reserved.
@@ -8,8 +8,13 @@
 #import "ErrorImgView.h"
 #import "UIView+Frame.h"
 
+#define KScreenHeight   [UIScreen mainScreen].bounds.size.height
+#define KScreenWidth    [UIScreen mainScreen].bounds.size.width
+#define AutoSizeScaleX  (KScreenHeight > 480 ? KScreenWidth/320 : 1.0)
+#define AutoSizeScaleY  (KScreenHeight > 480 ? KScreenHeight/568 : 1.0)
+#define CGRectMakeCustom(x, y, width, height) CGRectMake(x * AutoSizeScaleX, y * AutoSizeScaleY, width * AutoSizeScaleX, height * AutoSizeScaleY)
 
-
+#define ColorI(c) [UIColor colorWithRed:((c>>16)&0xff)/255.0 green:((c>>8)&0xff)/255.0 blue:(c&0xff)/255.0 alpha:1.0]
 
 @interface ErrorImgView ()
 @property (nonatomic, strong) UILabel *errorLabel;

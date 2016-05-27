@@ -1,12 +1,11 @@
 //
-//  LLErrorImgView.h
+//  ErrorImgView.h
 //
 //  Created by ocarol on 16/1/4.
 //  Copyright © 2016年 ocarol. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "Definition.h"
 
 typedef enum : NSUInteger {
     errorImgViewWithNetworkError = 0,
